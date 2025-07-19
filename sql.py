@@ -19,3 +19,5 @@ movie_data=[
     (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107)
 ]
 cursor.executemany("INSERT INTO movie VALUES (?,?,?,?,?);", movie_data)
+conn.commit()
+conn.close()
